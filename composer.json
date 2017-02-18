@@ -1,0 +1,91 @@
+{
+  "name": "dolibarr/helpdesk",
+  "type": "dolibarr-module",
+  "description": "A Dolibarr module template",
+  "keywords": [
+    "dolibarr",
+    "template"
+  ],
+  "homepage": "https://github.com/Dolibarr/dolibarr-module-template",
+  "license": "GPL-3.0+",
+  "support": {
+    "issues": "https://github.com/Dolibarr/dolibarr-module-template/issues"
+  },
+  "config": {
+    "process-timeout": 3600,
+    "bin-dir": "dev/bin"
+  },
+  "require": {
+    "php": ">=5.3.0",
+    "composer/installers": "^1",
+    "erusev/parsedown": "^1",
+    "enrise/urihelper": "^1"
+  },
+  "require-dev": {
+    "jakub-onderka/php-parallel-lint": "^0",
+    "jakub-onderka/php-console-highlighter": "^0",
+    "phpunit/phpunit": "^4",
+    "squizlabs/php_codesniffer": "^2",
+    "phpunit/phpunit-selenium": "^2",
+    "wimg/php-compatibility": "^7",
+    "phpdocumentor/phpdocumentor": "^2"
+  },
+  "scripts": {
+    "post-update-cmd": "@compat_workaround",
+    "post-install-cmd": "@compat_workaround",
+    "compat_workaround": "if [ -d \"vendor/wimg/php-compatibility\" ]; then\n rm -fr \"vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PHPCompatibility\"\n cp -a \"vendor/wimg/php-compatibility\" \"vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PHPCompatibility\"\n fi",
+    "check": [
+      "@check_lint",
+      "@check_compat",
+      "@check_style"
+    ],
+    "check_lint": "parallel-lint --exclude build --exclude doc --exclude vendor --blame .",
+    "check_compat": "TRAVIS_PHP_VERSION=\"${TRAVIS_PHP_VERSION:=5.3-7.0}\"; phpcs -n -p -d memory_limit=-1 -d max_execution_time=-1 --colors --standard=PHPCompatibility --runtime-set testVersion $TRAVIS_PHP_VERSION --ignore=build/\\*,doc/\\*,vendor/\\* .",
+    "check_style": "phpcs -s -n -p -d memory_limit=-1 -d max_execution_time=-1 --colors --tab-width=4 --encoding=utf-8 --standard=dev/codesniffer/DolibarrPSR2.xml  --ignore=build/\\*,doc/\\*,vendor/\\* .",
+    "test": [
+      "@test_unit",
+      "@test_functional"
+    ],
+    "test_unit": "phpunit test/unit",
+    "test_functional": "phpunit test/functional",
+    "release": [
+      "@check",
+      "@test",
+      "@tx_pull",
+      "@composer update --no-dev",
+      "@build",
+      "@composer update"
+    ],
+    "build": "cd build; ./makepack-dolibarrmodule.pl",
+    "tx_push": "tx push -s",
+    "tx_pull": "tx pull -a",
+    "git_hooks_install": "git config --add core.hooksPath dev/git-hooks",
+    "git_hooks_remove": "git config --unset core.hooksPath",
+    "git_pre_commit": "@check",
+    "git_post_commit": "",
+    "git_pre_push": [
+      "@test",
+      "@tx_push"
+    ],
+    "doc": [
+      "@doc_dev",
+      "@doc_user"
+    ],
+    "doc_dev" : [
+      "@doc_dev_doxygen",
+      "@doc_dev_phpdoc"
+    ],
+    "doc_dev_doxygen": "cd build/doxygen; doxygen helpdesk.doxyfile",
+    "doc_dev_phpdoc": "phpdoc",
+    "doc_user": [
+      "@doc_user_html",
+      "@doc_user_pdf",
+      "@doc_user_epub"
+    ],
+    "doc_user_html": "cd doc/user; make html",
+    "doc_user_pdf": "cd doc/user; make latexpdf",
+    "doc_user_epub": "cd doc/user; make epub",
+    "read_doc_dev": "xdg-open doc/code/phpdoc/index.html",
+    "read_doc_user": "xdg-open doc/user/build/html/index.html"
+  }
+}

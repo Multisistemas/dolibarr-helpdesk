@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../includes/OAuth/Common" />
+          <root url="file://$MODULE_DIR$/../../includes/OAuth/OAuth1" />
+          <root url="file://$MODULE_DIR$/../../includes/OAuth/OAuth2" />
+          <root url="file://$MODULE_DIR$/../../includes/ccampbell/chromephp" />
+          <root url="file://$MODULE_DIR$/../../includes/ckeditor/ckeditor" />
+          <root url="file://$MODULE_DIR$/../../includes/composer" />
+          <root url="file://$MODULE_DIR$/../../includes/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/../../includes/erusev/parsedown" />
+          <root url="file://$MODULE_DIR$/../../includes/fpdfi/filters" />
+          <root url="file://$MODULE_DIR$/../../includes/jakub-onderka/php-console-color" />
+          <root url="file://$MODULE_DIR$/../../includes/jakub-onderka/php-console-highlighter" />
+          <root url="file://$MODULE_DIR$/../../includes/jakub-onderka/php-parallel-lint" />
+          <root url="file://$MODULE_DIR$/../../includes/jquery/css" />
+          <root url="file://$MODULE_DIR$/../../includes/jquery/js" />
+          <root url="file://$MODULE_DIR$/../../includes/jquery/plugins" />
+          <root url="file://$MODULE_DIR$/../../includes/mike42/escpos-php" />
+          <root url="file://$MODULE_DIR$/../../includes/mobiledetect/mobiledetectlib" />
+          <root url="file://$MODULE_DIR$/../../includes/nusoap/lib" />
+          <root url="file://$MODULE_DIR$/../../includes/odtphp/zip" />
+          <root url="file://$MODULE_DIR$/../../includes/phpdocumentor/reflection-common" />
+          <root url="file://$MODULE_DIR$/../../includes/phpdocumentor/reflection-docblock" />
+          <root url="file://$MODULE_DIR$/../../includes/phpdocumentor/type-resolver" />
+          <root url="file://$MODULE_DIR$/../../includes/phpoffice/phpexcel" />
+          <root url="file://$MODULE_DIR$/../../includes/phpspec/prophecy" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/php-code-coverage" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/php-file-iterator" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/php-text-template" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/php-timer" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/php-token-stream" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/phpunit" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/phpunit-mock-objects" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/phpunit-selenium" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/dist" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/docs" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/example" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/plugins" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/src" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/template" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/test" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/vendor" />
+          <root url="file://$MODULE_DIR$/../../includes/restler/framework" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/comparator" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/diff" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/environment" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/exporter" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/global-state" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/recursion-context" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/version" />
+          <root url="file://$MODULE_DIR$/../../includes/squizlabs/php_codesniffer" />
+          <root url="file://$MODULE_DIR$/../../includes/swiftmailer/lib" />
+          <root url="file://$MODULE_DIR$/../../includes/symfony/yaml" />
+          <root url="file://$MODULE_DIR$/../../includes/tecnickcom/tcpdf" />
+          <root url="file://$MODULE_DIR$/../../includes/webmozart/assert" />
+          <root url="file://$MODULE_DIR$/../../includes/wimg/php-compatibility" />
+          <root url="file:///opt/google_appengine/php/sdk" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../includes/OAuth/Common" />
+          <root url="file://$MODULE_DIR$/../../includes/OAuth/OAuth1" />
+          <root url="file://$MODULE_DIR$/../../includes/OAuth/OAuth2" />
+          <root url="file://$MODULE_DIR$/../../includes/ccampbell/chromephp" />
+          <root url="file://$MODULE_DIR$/../../includes/ckeditor/ckeditor" />
+          <root url="file://$MODULE_DIR$/../../includes/composer" />
+          <root url="file://$MODULE_DIR$/../../includes/doctrine/instantiator" />
+          <root url="file://$MODULE_DIR$/../../includes/erusev/parsedown" />
+          <root url="file://$MODULE_DIR$/../../includes/fpdfi/filters" />
+          <root url="file://$MODULE_DIR$/../../includes/jakub-onderka/php-console-color" />
+          <root url="file://$MODULE_DIR$/../../includes/jakub-onderka/php-console-highlighter" />
+          <root url="file://$MODULE_DIR$/../../includes/jakub-onderka/php-parallel-lint" />
+          <root url="file://$MODULE_DIR$/../../includes/jquery/css" />
+          <root url="file://$MODULE_DIR$/../../includes/jquery/js" />
+          <root url="file://$MODULE_DIR$/../../includes/jquery/plugins" />
+          <root url="file://$MODULE_DIR$/../../includes/mike42/escpos-php" />
+          <root url="file://$MODULE_DIR$/../../includes/mobiledetect/mobiledetectlib" />
+          <root url="file://$MODULE_DIR$/../../includes/nusoap/lib" />
+          <root url="file://$MODULE_DIR$/../../includes/odtphp/zip" />
+          <root url="file://$MODULE_DIR$/../../includes/phpdocumentor/reflection-common" />
+          <root url="file://$MODULE_DIR$/../../includes/phpdocumentor/reflection-docblock" />
+          <root url="file://$MODULE_DIR$/../../includes/phpdocumentor/type-resolver" />
+          <root url="file://$MODULE_DIR$/../../includes/phpoffice/phpexcel" />
+          <root url="file://$MODULE_DIR$/../../includes/phpspec/prophecy" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/php-code-coverage" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/php-file-iterator" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/php-text-template" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/php-timer" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/php-token-stream" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/phpunit" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/phpunit-mock-objects" />
+          <root url="file://$MODULE_DIR$/../../includes/phpunit/phpunit-selenium" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/dist" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/docs" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/example" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/plugins" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/src" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/template" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/test" />
+          <root url="file://$MODULE_DIR$/../../includes/raven-js/vendor" />
+          <root url="file://$MODULE_DIR$/../../includes/restler/framework" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/comparator" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/diff" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/environment" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/exporter" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/global-state" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/recursion-context" />
+          <root url="file://$MODULE_DIR$/../../includes/sebastian/version" />
+          <root url="file://$MODULE_DIR$/../../includes/squizlabs/php_codesniffer" />
+          <root url="file://$MODULE_DIR$/../../includes/swiftmailer/lib" />
+          <root url="file://$MODULE_DIR$/../../includes/symfony/yaml" />
+          <root url="file://$MODULE_DIR$/../../includes/tecnickcom/tcpdf" />
+          <root url="file://$MODULE_DIR$/../../includes/webmozart/assert" />
+          <root url="file://$MODULE_DIR$/../../includes/wimg/php-compatibility" />
+          <root url="file:///opt/google_appengine/php/sdk" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="jqueryui-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="jquery-DefinitelyTyped" level="application" />
+  </component>
+</module>
